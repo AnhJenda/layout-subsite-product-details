@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Subsite Product's details</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="angular/angular.min.js"></script>
+</head>
+<body>
+<!--    Phần header copy từ trang index ở đây-->
+
+<!--    Từ đây là phần riêng của các trang thông tin cụ thể về sản phẩm-->
+    <div class="page-top">
+        <div class="breadcrumb-wrapper">
+            <div class="breadcrumb-title">
+                <h2 class="page-title">Sản Phẩm 1</h2>
+            </div>
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Sản Phẩm</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sản Phẩm 1</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="product-img">
+                            <img src="img/Body%20cài%20thẳng.png" class="img-thumbnail" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="product-details row">
+                            <div class="product-price">
+                                <span>Giá: </span>
+                                <span class="price">150,000 VND</span>
+                            </div>
+                            <div class="product-color-size-filter">
+                                <form action="#" method="get">
+                                    <div class="color-picker btn-group" role="group" aria-label="color-picker">
+                                        <span>Màu Sắc: </span>
+                                        <button type="button" class="btn btn-primary" id="pink"></button>
+                                        <button type="button" class="btn btn-primary" id="green"></button>
+                                        <button type="button" class="btn btn-primary" id="blue"></button>
+                                    </div>
+                                    <br>
+                                    <div class="size-picker btn-group" role="group" aria-label="size-picker">
+                                        <span>Size: </span>
+                                        <button type="button" class="btn btn-primary" id="size1">
+                                            <label for="size1">1-3M</label>
+                                        </button>
+                                        <button type="button" class="btn btn-primary" id="size2">
+                                            <label for="size2">4-6M</label>
+                                        </button>
+                                        <button type="button" class="btn btn-primary" id="size3">
+                                            <label for="size3">6M-12M</label>
+                                        </button>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <div class="quantity" ng-app="myApp" ng-controller="myCtrl">
+                                            <input type="number" id="quantity_sanpham1" class="input-text qty text"
+                                                   step="1" min="1" max="" name="quantity" value="1" inputmode="numeric"
+                                                    ng-model="qty" ng-click="Calc()">
+                                            <span>Thành Tiền: {{total | currency: 'VND: '}}</span>
+                                        </div>
+                                        <button type="submit" class="add_to_cart_button button alt">Thêm vào giỏ hàng</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="product-sharing row">
+                            <span>Share: </span>
+                            <ul>
+                                <li>
+                                    <a class="facebook-share" href="#" target="_blank">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="twitter-share" href="#" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="instagram-share" href="#" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="pinterest-share" href="#" target="_blank">
+                                        <i class="fab fa-pinterest"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 sidebar-right">
+                <div class="sidebar-right-wrapper">
+                    <h3 class="sidebar-title">Có thể bạn thích</h3>
+                    <div class="sidebar-item">
+                        <h5 class="sidebar-item-title">Danh mục sản phẩm</h5>
+                        <ul class="sidebar-list list-group">
+                            <li class="sidebar-list-item list-group-item"><a href="#">link1</a></li>
+                            <li class="sidebar-list-item list-group-item"><a href="#">link2</a></li>
+                            <li class="sidebar-list-item list-group-item"><a href="#">link3</a></li>
+                            <li class="sidebar-list-item list-group-item"><a href="#">link4</a></li>
+                            <li class="sidebar-list-item list-group-item"><a href="#">link5</a></li>
+                            <li class="sidebar-list-item list-group-item item-end"><a href="#">link6</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    Footer copy từ trang index ở đây-->
+<!--    Footer Ending-->
+<!--        AngularJS để tính tiền ở đây-->
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.price = 150000;
+            $scope.qty = 0;
+            $scope.total = "";
+            $scope.Calc = function() {
+                $scope.total = $scope.qty * $scope.price;
+            }
+        });
+    </script>
+</body>
+</html>

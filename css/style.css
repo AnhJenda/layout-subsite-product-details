@@ -1,0 +1,113 @@
+.breadcrumb-wrapper {
+    background-color: #e9ecef;
+}
+.breadcrumb-title {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.breadcrumb {
+    text-align: center;
+    --bs-breadcrumb-divider: '>';
+    align-items: center;
+    margin: 0 auto;
+    background-color: unset;
+}
+.sidebar-right {
+    margin-top: 15px;
+    border: 1px solid lightgrey;
+}
+.sidebar-title {
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+.sidebar-item {
+    width: 90%;
+    margin: 0 auto;
+}
+.sidebar-item-title {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+.sidebar-list-item, .list-group-item {
+    margin: 0 10px 0 10px;
+    border-bottom: 1px solid lightgrey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.item-end {
+    border: unset;
+    margin: 0 10px 0 10px;
+}
+span.price {
+    font-weight: 500;
+}
+div.product-color-size-filter {
+    margin-top: 15px;
+}
+div.color-picker button#pink {
+    background-color: pink;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: unset;
+}
+div.color-picker button#green {
+    background-color: green;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: unset;
+}
+div.color-picker button#blue{
+    background-color: blue;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: unset;
+}
+div.size-picker {
+    margin-top: 20px;
+}
+div.size-picker button#size1{
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 40px;
+    width: fit-content;
+    border-radius: unset;
+    color: black;
+    padding: 0 3px 0 3px;
+}
+div.size-picker button#size2{
+    background-color: white;
+    margin-right: 10px;
+    width: fit-content;
+    border-radius: unset;
+    color: black;
+    padding: 0 3px 0 3px;
+}
+div.size-picker button#size3{
+    background-color: white;
+    margin-right: 10px;
+    width: fit-content;
+    border-radius: unset;
+    color: black;
+    padding: 0 3px 0 3px;
+}
+div.add-to-cart {
+    display: inline-block;
+    float: left;
+}
+div.add-to-cart div.quantity input {
+    width: 50px;
+    margin-top: 10px;
+}
+button.add_to_cart_button {
+    margin-top: 10px;
+}
+div.product-sharing {
+    margin-top: 20px;
+}
