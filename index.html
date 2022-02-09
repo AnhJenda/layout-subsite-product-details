@@ -40,7 +40,16 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-6">
                         <div class="product-img">
-                            <img src="img/Body%20cài%20thẳng.png" class="img-thumbnail" alt="">
+                            <div class="current-img">
+                                <img src="img/Body%20cài%20thẳng.png" class="img-fluid pic-zoom" id="pic-main" alt="">
+                            </div>
+                            <div class="same-product">
+                                <ul>
+                                    <li><img src="img/Body%20cài%20thẳng.png" onclick="changeImg('one')" id="one" alt=""></li>
+                                    <li><img src="img/Body%20dài%20cài%20giữa.png" onclick="changeImg('two')" id="two" alt=""></li>
+                                    <li><img src="img/Body%20chip%20kèm%20quần%20dài.png" onclick="changeImg('three')" id="three" alt=""></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-6">
@@ -72,9 +81,8 @@
                                     </div>
                                     <div class="add-to-cart">
                                         <div class="quantity" ng-app="myApp" ng-controller="myCtrl">
-                                            <input type="number" id="quantity_sanpham1" class="input-text qty text"
-                                                   step="1" min="1" max="" name="quantity" value="1" inputmode="numeric"
-                                                    ng-model="qty" ng-click="Calc()">
+                                            <input type="number" id="quantity_sanpham1" class="input-text" min="1" max=""
+                                                   step="1" name="quantity" value="1" ng-model="qty" ng-click="Calc()">
                                             <span>Thành Tiền: {{total | currency: 'VND: '}}</span>
                                         </div>
                                         <button type="submit" class="add_to_cart_button button alt">Thêm vào giỏ hàng</button>

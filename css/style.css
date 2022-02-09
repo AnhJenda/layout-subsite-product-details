@@ -125,3 +125,12 @@ div.product-description {
 li.nav-item button:focus {
     outline: none;
 }
+div.same-product ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+div.same-product ul li img {
+    width: 100px;
+    cursor: pointer;
+    opacity: 0.4;
+}
