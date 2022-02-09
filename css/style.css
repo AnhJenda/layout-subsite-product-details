@@ -111,3 +111,17 @@ button.add_to_cart_button {
 div.product-sharing {
     margin-top: 20px;
 }
+div.product-description {
+    margin-top: 30px;
+    display: block;
+}
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+li.nav-item button:focus {
+    outline: none;
+}
